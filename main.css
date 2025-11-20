@@ -1,0 +1,481 @@
+/* -------------------- GLOBAL STYLES -------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+/* Containers */
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.width-33 { width: 33%; }
+.width-25 { width: 25%; }
+.width-50 { width: 50%; }
+.width-100 { width: 100%; }
+
+.mt-20 { margin-top: 20px; }
+
+/* -------------------- HEADER / MENU -------------------- */
+
+.main-panel {
+    background: #111;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo a {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.span-col {
+    color: #00eaff;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #00eaff;
+}
+
+/* -------------------- BANNER -------------------- */
+
+.banner-section {
+    padding: 33px 0;
+}
+
+.banner-section h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.banner-section h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.github-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00eaff;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.github-btn:hover {
+    color: #000;
+    background: #00c7db;
+}
+
+.container img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* -------------------- ABOUT SECTION -------------------- */
+
+.main-section {
+    padding: 50px 0;
+}
+
+.bg-lightgrey {
+    background: #111;
+}
+
+.about-me h2 {
+    font-size: 32px;
+    color: #00eaff;
+}
+
+.about-me h3 {
+    margin: 10px 0;
+}
+
+.about-me p {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.about-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+table th {
+    text-align: left;
+    color: #00eaff;
+}
+
+table td {
+    color: #fff;
+}
+
+/* -------------------- SKILLS SECTION -------------------- */
+.skills-title { 
+    width: 100%; 
+    text-align: center; 
+    margin-bottom: 40px; 
+}
+.skill-group-title { 
+    font-size: 20px; 
+    color: #00eaff; 
+    margin: 30px 0 10px; 
+}
+
+/* Linear Skills */
+.skill { margin-top: 25px; font-size: 17px; }
+.skill span { float: right; }
+.skill-bar-new {
+    width: 100%;
+    margin-top: 5px;
+    background: #333;
+    border-radius: 10px;
+    height: 6px;
+    overflow: hidden;
+}
+.skill-bar-new span {
+    display: block;
+    background: #00eaff;
+    height: 6px;
+    width: 0;
+    transition: width 1.5s ease-in-out;
+}
+
+/* Circular Skills */
+.circles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.circle-skill {
+    margin: 20px auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    color: #00eaff;
+    background: radial-gradient(closest-side, #000 80%, transparent 0 99.9%, #000 0),
+                conic-gradient(#222 0deg, #222 360deg);
+    transition: background 1s ease-in-out;
+}
+
+/* -------------------- EDUCATION & EXPERIENCE -------------------- */
+
+.bg-lightgrey {
+    background-color: #1a1a1a;
+}
+
+.container.edu-experience-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.edu-exp {
+    flex: 1 1 50%;
+    padding: 10px 0;
+}
+
+.center-text {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.experience-list {
+    width: 100%;
+    padding: 25px 20px;
+    background: #262626;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.experience-content h2 {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #00eaff;
+}
+
+.experience-content h3 {
+    color: #ffbf35;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+.experience-content p {
+    font-size: 15px;
+    color: #fff;
+}
+
+/* -------------------- PROJECTS SECTION -------------------- */
+.heading-text.center-text {
+    text-align: center;
+    color: white; 
+    margin-bottom: 30px;
+}
+
+.gallery {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.project-item {
+    width: 31%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-item img:hover {
+    transform: scale(1.05);
+}
+
+.project-title {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.project-title a {
+    color: #00eaff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-title a:hover {
+    text-decoration: underline;
+}
+
+/* -------------------- CONTACT -------------------- */
+
+.contact {
+    padding: 50px 0;
+    background: #111;
+    color: #fff;
+    text-align: center;
+}
+
+.contact form {
+    width: 66%;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #00eaff;
+    border-radius: 5px;
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+}
+
+.contact textarea {
+    height: 80px;
+    resize: none;
+}
+
+.contact button {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #00eaff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.contact button:hover {
+    background: #00c7db;
+}
+
+.contact h3 {
+    font-size: 26px;
+    margin-top: 60px;
+    color: #00eaff;
+}
+
+.contact h4 {
+    font-size: 22px;
+    margin-top: 10px;
+    color: #00eaff;
+}
+
+.contact p {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #fff;
+}
+
+/* Contact Info Boxes */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.contact-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    flex: 1 1 250px;
+    max-width: 300px;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-box i {
+    font-size: 28px;
+    color: #00eaff;
+}
+
+.contact-box div h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #00eaff;
+}
+
+.contact-box div p {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+}
+
+/* -------------------- FOOTER -------------------- */
+
+.footer {
+    background: #000;
+    padding: 20px 0;
+    text-align: center;
+    color: #00eaff;
+    font-size: 14px;
+}
+
+.footer-sect {
+    text-align: center;
+    color: white;
+}
+.footer .footer-sect {
+    margin: 0;
+}
+
+/* -------------------- Back to top -------------------- */
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #00eaff;
+    padding: 10px 15px;
+    border-radius: 50%;
+    color: #000;
+    text-decoration: none;
+    font-size: 24px;
+    display: none;
+    z-index: 99;
+    transition: opacity 0.3s;
+}
+
+.back-to-top.show {
+    display: block;
+}
+
+.back-to-top:hover {
+    opacity: 0.8;
+}
+
+/* -------------------- MEDIA QUERIES -------------------- */
+@media (max-width: 768px) {
+    .width-50, .width-33, .width-66, .edu-exp, .skill-category {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .circle-skill {
+        width: 100px;
+        height: 100px;
+    }
+
+    .project-item { width: 48%; }
+
+    .container.edu-experience-container {
+        flex-direction: column;
+    }
+
+    .edu-exp { flex: 1 1 100%; }
+
+    .contact form { width: 90%; }
+    .contact-info { flex-direction: column; align-items: center; }
+    .contact-box { width: 80%; }
+}
+
+@media (max-width: 480px) {
+    .circle-skill { width: 80px; height: 80px; }
+    .banner-section h1 { font-size: 32px; }
+    .heading-text { font-size: 28px; }
+    .project-item { width: 100%; }
+    .circular-progress { width: 80px; height: 80px; }
+    .circular-value { font-size: 14px; }
+}
