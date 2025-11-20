@@ -46,12 +46,6 @@ Formspree (for contact form submission)
 /script.js           -> JavaScript for skills animation & back-to-top button
 /images/             -> Banner, About, and Project images
 
-🔗 Links
-
-GitHub: https://github.com/Muhammad-Khater
-
-Portfolio Live Demo: (Add your GitHub Pages link if deployed)
-
 👨‍💻 About Me
 
 I am Muhammad Khater, a motivated programming enthusiast and graduate student specializing in Software Localization. I have hands-on experience with Python, JavaScript, SQL, and web development. I am passionate about turning ideas into practical software solutions and constantly learning through real-world challenges.
