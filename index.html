@@ -21,7 +21,14 @@
             <div class="width-25">
                 <nav aria-label="Main navigation">
                     <a href="index.html">Home</a>
-                    <a href="#about">About</a>
+                    <div class="dropdown">
+                        <a href="#about" class="dropbtn">About</a>
+                        <div class="dropdown-content">
+                            <a href="#skills">Skills</a>
+                            <a href="#edu">Education</a>
+                            <a href="#exp">Experience</a>
+                        </div>
+                    </div>
                     <a href="#projects">Projects</a>
                     <a href="#contact">Contact</a>
                 </nav>
@@ -122,34 +129,6 @@
 
             </div>
 
-            <!-- RIGHT: Circular Skills -->
-            <div class="width-50 circles-container">
-
-                <div class="width-50">
-                    <div class="circle-skill" role="progressbar" data-value="85">Python</div>
-                </div>
-
-                <div class="width-50">
-                    <div class="circle-skill" role="progressbar" data-value="80">JavaScript</div>
-                </div>
-
-                <div class="width-50">
-                    <div class="circle-skill" role="progressbar" data-value="95">HTML/CSS</div>
-                </div>
-
-                <div class="width-50">
-                    <div class="circle-skill" role="progressbar" data-value="70">SQL</div>
-                </div>
-
-                <div class="width-50">
-                    <div class="circle-skill" role="progressbar" data-value="85">VS Code</div>
-                </div>
-
-                <div class="width-50">
-                    <div class="circle-skill" role="progressbar" data-value="80">Git</div>
-                </div>
-
-            </div>
         </div>
     </div>
 
@@ -158,7 +137,7 @@
     <div class="container edu-experience-container">
         
         <!-- EDUCATION -->
-        <div class="edu-exp">
+        <div class="edu-exp" id="edu">
         <h2 class="heading-text center-text">Education</h2>
         
         <div class="experience-list">
@@ -187,7 +166,7 @@
         </div>
 
         <!-- EXPERIENCE -->
-        <div class="edu-exp">
+        <div class="edu-exp" id="exp">
         <h2 class="heading-text center-text">Experience</h2>
         
         <div class="experience-list">
